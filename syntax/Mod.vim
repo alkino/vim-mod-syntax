@@ -9,9 +9,9 @@ syn keyword ModRepeat FROM TO WITH WHILE WATCH return printf
 syn keyword ModConditional if else
 syn keyword ModType INTEGER DOUBLE
 syn keyword ModStruct INSTANCE_STRUCT
-syn keyword ModDelimiter VERBATIM ENDVERBATIM
 syn region  ModComment start='\<COMMENT\>' end='ENDCOMMENT'
-syn region  Verbatim start='\<VERBATIM\>' end='ENDVERBATIM'
+syn include @ModFileVerbatimBlock syntax/cpp.vim
+syn region  Verbatim matchgroup=Delimiter start='\<VERBATIM\>' end='ENDVERBATIM' keepend contains=@ModFileVerbatimBlock
 syn match ModComment ":.*$"
 syn match ModNumber "\<\d\+\>\.\?"
 syn match ModNumber "\<\d\+\.\d*\%([eE][-+]\=\d\+\)\=\>"
@@ -24,4 +24,3 @@ hi link ModArg Keyword
 hi link ModComment Comment
 hi link ModType Type
 hi link ModStruct Structure
-hi link ModDelimiter Delimiter
