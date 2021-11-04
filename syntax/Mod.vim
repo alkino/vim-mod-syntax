@@ -1,11 +1,12 @@
 syn case ignore
 syn keyword ModFunction neuron state procedure assigned breakpoint derivative
-syn keyword ModFunction title initial function parameter units kinetic
+syn keyword ModFunction title initial function parameter units kinetic function_table
 syn keyword ModFunction net_receive define include instance_struct constant
 syn keyword ModFunction independent destructor constructor linear
 syn keyword ModArg suffix range local solve method threadsafe point_process electrode_current
-syn keyword ModArg nonspecific_current useion unitsoff unitson global read conserve
-syn keyword ModArg write artificial_cell bbcorepointer table pointer depend
+syn keyword ModArg nonspecific_current useion unitsoff unitson global read conserve compartment
+syn keyword ModArg write artificial_cell bbcorepointer table pointer depend steadystate
+syn keyword ModArg longitudinal_diffusion
 syn keyword ModMethodName adams runge euler adeuler heun adrunge gear newton simplex simeq seidel
 syn keyword ModMethodName _advance sparse derivimplicit cnexp clsoda after_cvode cvode_t cvode_t_v
 syn keyword ModRepeat from to with while watch return
