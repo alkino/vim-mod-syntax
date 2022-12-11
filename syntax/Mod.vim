@@ -7,7 +7,7 @@ syn keyword ModArg suffix range local solve method threadsafe point_process elec
 syn keyword ModArg nonspecific_current useion unitsoff unitson global read conserve compartment
 syn keyword ModArg write artificial_cell bbcorepointer table pointer depend steadystate
 syn keyword ModArg longitudinal_diffusion valence mutexlock mutexunlock before
-syn keyword ModArg after
+syn keyword ModArg after external
 syn keyword ModMethodName adams runge euler adeuler heun adrunge gear newton simplex simeq seidel
 syn keyword ModMethodName _advance sparse derivimplicit cnexp clsoda after_cvode cvode_t cvode_t_v
 syn keyword ModRepeat from to with while watch return
