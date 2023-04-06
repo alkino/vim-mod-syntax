@@ -33,8 +33,7 @@ syn include @ModFileVerbatimBlock syntax/cpp.vim
 syn region  Verbatim matchgroup=Delimiter start='\<VERBATIM\>' end='ENDVERBATIM' keepend contains=@ModFileVerbatimBlock
 syn match ModComment ":.*$"
 syn match ModComment "?.*$"
-syn match ModNumber "\<\d\+\>\.\?"
-syn match ModNumber "\<\d\+\.\d*\%([eE][-+]\=\d\+\)\=\>"
+syn match ModNumber "\<\d\+\%(\.\d*\)\?\%([eE][-+]\=\d\+\)\=\>"
 syn region ModString start=+"+ end=+"+
 
 hi link ModNumber Number
